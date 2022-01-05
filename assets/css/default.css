@@ -1,9 +1,4 @@
-body {
-    
-  }
-
-  /* Reset default browser settings */
-
+/* Reset default browser settings */
 /* Box sizing rules */
 *,
 *::before,
@@ -21,7 +16,6 @@ body {
 body {
   position: static;
   font-family: "Rubik", "Balsamiq Sans";
-  background: #efedfc;
   scroll-behavior: smooth;
   text-rendering: optimizeSpeed;
   -webkit-font-smoothing: antialiased;
