@@ -1,9 +1,9 @@
 // Mobile navigation toggle button
 let nav_interative = () => {
-    let burger = document.querySelector('.burger');
-    let nav = document.querySelector('.menu');
+    let burger = document.querySelector('#burger');
+    let nav = document.querySelector('#menu');
     let navBar = document.querySelector('nav');
-    let menuLinks = document.querySelectorAll('.menu li');
+    let menuLinks = document.querySelectorAll('#menu li');
     
     // Toggle Menu
     burger.addEventListener('click', () => {
@@ -40,10 +40,10 @@ let body = document.body;
 checkbox.addEventListener('change', function() {
     if (this.checked) {
         body.classList.add('dark-theme');
-        document.getElementById("logo-icon").src = '/assets/img/brain-logo-dark.png';
+        // document.getElementById("logo-icon").src = '/assets/img/brain-logo-dark.png';
     } else {
         body.classList.remove('dark-theme');
-        document.getElementById("logo-icon").src = '/assets/img/brain-logo.png';
+        // document.getElementById("logo-icon").src = '/assets/img/brain-logo.png';
     }
 });
 
