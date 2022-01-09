@@ -31,7 +31,7 @@
 </head>
 <body>
     <header>
-        <nav class="nav-bar">
+        <nav id="nav-bar">
             <div id="logo">
                 <img src="/assets/img/brain-logo.png" alt="My personal logo" id="logo-icon" >
             </div>
@@ -50,7 +50,7 @@
                 <div class="line2"></div>
                 <div class="line3"></div>
             </div>
-            <div id="toggle">
+            <div id="mode-toggle">
                 <input type="checkbox" id="toggle_checkbox">
                 <label for="toggle_checkbox">
                 <div id="star">
@@ -62,7 +62,35 @@
             </div>
         </nav>
     </header>
-    
+
+    <section id="section-1">
+    <!-- Landing page section -->
+    <div class="landing-page">
+        <h4 id="intro">Hi, my name is</h4>
+        <h1>Aboze Brain John</h2>
+
+        <h2 id="skills">Data Scientist</h2> 
+        <h3>I am a frontend developer and data scientist based in Lagos, Nigeria 
+            specializing in designing, building and documenting data-driven products.</h3>
+        <div class="landing-button">
+            <button type="submit" onclick="window.open('CV.pdf','_blank')">Download CV</button>
+            <button type="button" onclick="window.open('mailto:411.codebrain@gmail.com?subject=Connect&body=Hi Brain,' , '_blank')">Get in Touch</button>
+        </div>
+    </div>
+    <div class="social-media">
+        <div>
+            <ul>
+                <li><a href="https://github.com/codebrain001" target="_blank" rel="noopener noreferrer"><span class="iconify" data-inline="false" data-icon="ant-design:github-filled"> </span></a></li> 
+                <li><a href="https://www.linkedin.com/in/brain-john-jnr-aboze-304639127/" target="_blank" rel="noopener noreferrer"><span class="iconify" data-inline="false" data-icon="ant-design:linkedin-filled"></span></a></li>
+                <li><a href="mailto:411.codebrain@gmail.com?subject=Connect&body=Hi Brain," target="_blank" rel="noopener noreferrer"><span class="iconify" data-inline="false"data-icon="entypo:email"></span></a></li>
+                <li><a href="https://medium.com/@411.codebrain" target="_blank" rel="noopener noreferrer"><span class="iconify" data-inline="false" data-icon="ant-design:medium-square-filled"></span></a></li>
+                <li><a href="https://twitter.com/AbozeBrain" target="_blank" rel="noopener noreferrer"><span class="iconify" data-inline="false" data-icon="ant-design:twitter-outlined"></span> </a></li>
+                <li><a href="https://www.instagram.com/code_brain/" target="_blank" rel="noopener noreferrer"><span class="iconify" data-inline="false" data-icon="bx:bxl-instagram"></span></a></li>
+            </ul>
+        </div>
+        <div class="vl"></div>
+    </div>
+</section>
     <script src="/assets/js/script.js"></script>
     <script src="https://code.iconify.design/2/2.1.0/iconify.min.js"></script>
 </body>
