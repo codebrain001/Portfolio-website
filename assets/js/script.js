@@ -1,14 +1,21 @@
-let nav = document.getElementById('nav-bar');
-console.log(nav)
+// Mobile navigation toggle button
+let nav_interative = () => {
+    let burger = document.getElementById('burger');
+    let nav = document.getElementById('nav-bar');
+    let menuLinks = document.querySelectorAll('#menu li');
 
-let navSticky = () => {
-    if (window.scrollY > 10){
-        nav.classList.add("sticky");
-        console.log("Added")
-    } else {
-        nav.classList.remove("sticky"); 
-        console.log("Remove") 
-    }
-}
+    console.log(nav);
 
-navSticky();
+    // // Toggle Menu
+    // burger.addEventListener('click', () => {
+    //      // Burger toggle
+    //      burger.classList.toggle('toggle');
+
+    //      nav.classList.toggle('active');
+
+
+    // })
+
+};
+
+nav_interative();
