@@ -1,0 +1,60 @@
+/* Import google font (Balsamiq Sans) */
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+/* Reset default browser settings */
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default padding and margin */
+* {
+  padding: 0;
+  margin: 0;
+}
+
+/* Unselecting text area */
+*{
+  user-select: none;
+}
+
+/* Set core body defaults */
+body {
+  position: static;
+  font-family: 'Balsamiq Sans', cursive;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+  text-decoration: none;
+}
+
+/* Make images easier to work with */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Natural flow and rhythm in articles by default */
+article > * + * {
+  margin-top: 1em;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Anchor tag default styling */
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  cursor: pointer;
+}
