@@ -2,19 +2,20 @@
 let nav_interative = () => {
     let burger = document.getElementById('burger');
     let nav = document.getElementById('nav-bar');
+    let menu = document.getElementById('menu')
     let menuLinks = document.querySelectorAll('#menu li');
+    // Select HTML body 
+    let body = document.body;
 
-    console.log(nav);
+    // Toggle Menu
+    burger.addEventListener('click', ()=>{
+        burger.classList.toggle('toggle');
 
-    // // Toggle Menu
-    // burger.addEventListener('click', () => {
-    //      // Burger toggle
-    //      burger.classList.toggle('toggle');
+        menu.classList.toggle('active');
 
-    //      nav.classList.toggle('active');
-
-
-    // })
+        // Fixed the body section 
+        body.classList.toggle('body-fixed');
+    })
 
 };
 
