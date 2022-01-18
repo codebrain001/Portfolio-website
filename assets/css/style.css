@@ -48,7 +48,6 @@
     padding-left: 2vw;
 }
 
-
 #burger {
     display: none;
 }
@@ -108,7 +107,7 @@
         flex-direction: column;
         align-items: center;
         justify-content: space-around;
-        transition: all 0.3s ease-in;
+        transition: all 0.5s ease-in;
     }
 
     #nav-bar #menu.active{
@@ -129,12 +128,12 @@
 
     #nav-bar.remove-blur {
         backdrop-filter: none;
-      }
+    }
     
     .add-blur {
         -webkit-backdrop-filter: blur(80px);
         backdrop-filter: blur(80px);
-      }
+    }
 }
  
 /* About page styling */
@@ -166,31 +165,31 @@ div#landing-page > h4 {
     font-weight: lighter;
     font-size: 1.5vw;
     padding-bottom: 0.025em;
-  }
+}
 
-  div#landing-page > h1 {
+div#landing-page > h1 {
     color: var(--color-2);
     font-weight: bolder;
     font-size: 4.5vw;
     padding-bottom: 0.05em;
-  }
+}
 
-  div#landing-page > h2 {
+div#landing-page > h2 {
     color: var(--color-4);
     font-weight: bold;
     font-size: 4vw;
     padding-bottom: 0.05em;
-  }
+}
 
-  div#landing-page > h3 {
+div#landing-page > h3 {
     color: var(--color-5);
     font-weight: bold;
     word-wrap: break-word;
     text-align: justify;
     font-size: 1.6vw;
-  }
+}
 
-  div#landing-button button {
+div#landing-button button {
       background-color: var(--color-2);
       color: var(--color-3);
       border: 1px solid var(--color-2);
@@ -206,17 +205,17 @@ div#landing-page > h4 {
       width: 12em;
       height: 4.5em;
       outline: none;
-  }
+}
 
-  div#landing-button button:hover, 
-  div#landing-button button:focus {
+div#landing-button button:hover, 
+div#landing-button button:focus {
     background-color: #d3902b2c;
-  }
+}
   
-  div#landing-button button:active {
+div#landing-button button:active {
     background-color: var(--color-6);
     border: 3px solid var(--color-2);
-  }
+}
 
 div#social-media {
     display: flex;
@@ -240,8 +239,45 @@ div#social-media .iconify:focus{
     color: var(--color-2);
 }
 
-.vl {
+#vl {
     border-left: 1px solid var(--color-5);
     height: 8vh;
     align-self: center;
 }  
+
+/* Landing page styling Mobile */
+@media screen and (max-width: 520px) {
+    div#landing-page {
+      padding-left: 5vw;
+      padding-right: 5vw;
+    }
+  
+    div#social-media,
+    .vl {
+      display: none;
+    }
+
+    div#landing-page > h4 {
+        font-size: 4vw;
+        padding-bottom: 0.025em;
+    }
+    
+    div#landing-page > h1 {
+        font-size: 9vw;
+        padding-bottom: 0.05em;
+    }
+    
+    div#landing-page > h2 {
+        font-size: 7.5vw;
+        padding-bottom: 0.05em;
+    }
+    
+    div#landing-page > h3 {
+        font-size: 3vw;
+        text-align: justify;
+    }
+    
+    div#landing-button button {
+        font-size: 3vw;
+    }
+}
