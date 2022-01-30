@@ -19,6 +19,7 @@
     --text-color-light: hsl(var(--hue-color), 8%, 65%);
     --input-color: hsl(var(--hue-color), 70%, 96%);
     --body-color: hsl(var(--hue-color), 60%, 99%);
+    --second-color: #D3912B;
     --container-color: white;
 
     /*========== Font and typography ==========*/
@@ -110,6 +111,7 @@ ul {
 /* Default anchor tag styling */
 a {
     text-decoration: none;
+    color: black;
 }
 
 .uil {
@@ -249,4 +251,116 @@ img {
 /* Show Menu */
 .show_menu {
     bottom: 0;
+}
+
+
+/* Home styling */
+.home_container {
+    gap: 1rem;
+}
+
+.home_content {
+    grid-template-columns: .5fr 3fr;
+    padding-top: 3.5rem;
+    align-items: center;
+}
+
+.home_social{
+    grid-template-columns: max-content;
+    row-gap: .75rem;
+}
+
+.home_social_icon .uil{
+    font-size: 1.25rem;
+    color: var(--first-color);
+}
+
+.home_social_icon .uil:hover{
+    color: var(--first-color-alt);
+}
+
+.home_blob {
+    width: 300px;
+    fill: var(--second-color);
+
+}
+
+.home_blob_img {
+    width: 170px;
+}
+
+.home_data {
+    grid-column: 1/3;
+}
+
+.home_title {
+    font-size: var(--big-font-size);
+}
+
+.home_subtitle  {
+    font-size: var(--h3-font-size);
+    color: var(--text-color);
+    font-weight: var(--font-medium);
+    margin-bottom: var(--mb-0-75);
+}
+
+.home_description {
+    margin-bottom: var(--mb-2);
+}
+
+.home_scroll {
+    /* display: none; */
+}
+
+.home_scroll_button .uil{
+    color: var(--first-color);
+}
+.home_scroll {
+    transition: .3s ease-out;
+}
+
+.home_scroll:hover{
+    transform: translateY(.25rem);
+}
+
+.home_scroll_mouse{
+    font-size: 1.25rem;
+}
+
+.home_scroll_name {
+    font-size: var(--small-font-size);
+    color: var(--title-color);
+    font-weight: var(--font-medium);
+    margin-right: var(--mb-0-25);
+}
+
+.home_scroll_arrow{
+    font-size: 1.25rem;
+}
+
+
+/* Button styling */
+.button {
+    display: inline-block;
+    background-color: var(--first-color);
+    color: var(--container-color);
+    padding: 1rem;
+    border-radius: .5rem;
+    font-weight: var(--font-medium);
+}
+
+.button:hover{
+    background-color: var(--first-color-alt);
+}
+
+.button_icon {
+    color: var(--container-color);
+    font-size: 1.25rem;
+    margin-left: var(--mb-0-5);
+    transition: .3s ease-in;
+}
+
+.button_flex {
+    display: inline-flex;
+    align-items: center;
 }
