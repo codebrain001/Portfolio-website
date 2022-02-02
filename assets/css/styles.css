@@ -280,7 +280,7 @@ img {
 }
 
 .home_blob {
-    width: 300px;
+    width: 250px;
     fill: var(--second-color);
 
 }
@@ -309,7 +309,7 @@ img {
 }
 
 .home_scroll {
-    /* display: none; */
+    display: none;
 }
 
 .home_scroll_button .uil{
@@ -357,10 +357,53 @@ img {
     color: var(--container-color);
     font-size: 1.25rem;
     margin-left: var(--mb-0-5);
-    transition: .3s ease-in;
+    transition: .3s;
 }
 
 .button_flex {
     display: inline-flex;
     align-items: center;
+}
+
+/* About Styling */
+img.about_img{
+    width: 200px;
+    align-self: center;
+    justify-self: center;
+    border-radius: .5rem;
+
+}
+
+.about_description {
+    text-align: justify;
+    margin-bottom: var(--mb-2-5);
+}
+
+.about_info {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: var(--mb-2-5);
+}
+
+.about_info_title{
+    font-size: var(--h2-font-size);
+    font-weight: var(--font-semi-bold);
+    color: var(--title-color);
+}
+
+.about_info_name {
+    font-size: var(--smaller-font-size); 
+    
+}
+
+.about_info_title,
+.about_info_name {
+    display: block;
+    text-align: center ;
+}
+
+.about_buttons {
+    display: flex;
+    justify-content: center;
+
 }
