@@ -545,20 +545,26 @@ img.about_img{
 /* Qualification styling */
 .qualification_tabs {
     display: flex;
-    justify-content: space-evenly;
-    margin-bottom: var(--mb-2);
+    justify-content: center;
+    margin-bottom: var(--mb-1-5);
 }
 
-.qualification_button {
+.qualification_tabs div {
+    color: var(--first-color)
+}
+
+.qualification_tabs .uil {
+    color: var(--first-color)
+}
+
+.qualification_tab {
     font-size: var(--h3-font-size);
     font-weight: var(--font-medium);
-    cursor: pointer;
 }
 
-.qualification_button:hover{
-    color: var(--first-color);
+.qualification_content{
+    margin-bottom: var(--mb-3);
 }
-
 .qualification_icon {
     font-size: 1.8rem;
     margin-right: var(--mb-0-25);
@@ -578,10 +584,10 @@ img.about_img{
 
 .qualification_subtitle {
     display: inline-block;
-    font-size: var(--small-font-size);
+    font-size: var(--smaller-font-size);
 }
 
-.qualification_calender {
+.qualification_calendar  {
     font-size: var(--small-font-size);
     color: var(--text-color-light);
 }
@@ -594,19 +600,10 @@ img.about_img{
     border-radius: 50%;
 }
 
-
 .qualification_line {
     display: block;
     width: 1px;
     height: 100%;
     background-color: var(--first-color);
     transform: translate(6px, -7px);
-}
-
-.qualification [data-content] {
-    display: none;
-}
-
-.qualification_active[data-content] {
-    display: block;
 }
