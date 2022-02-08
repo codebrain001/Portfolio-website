@@ -51,6 +51,9 @@ const modalViews = document.querySelectorAll('.services_modal'),
     modalBtns = document.querySelectorAll('.services_button'),
     modalCloses = document.querySelectorAll('.services_modal_close');
 
+    const serviceSection = document.querySelector('section#services');
+    console.log('serviceSecction');
+
 let modal = function (modalClick){
     modalViews[modalClick].classList.add('active_modal');
 }
@@ -69,7 +72,19 @@ modalCloses.forEach((modalClose)=>{
     })
 })
 
-
+// Portfolio Swiper 
+let swiper = new Swiper('.portfolio_container', {
+    cssMode: true,
+    loop: true,
+    navigation: {
+      nextEl: "div.swiper-button-next",
+      prevEl: "div.swiper-button-prev",
+    },
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+  });
 
 
 
