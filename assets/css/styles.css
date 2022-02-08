@@ -386,6 +386,22 @@ img {
     color: var(--first-color-alt);
 }
 
+.button_white {
+    background-color: var(--container-color);
+    color: var(--first-color);
+    margin-bottom: var(--mb-3);
+}
+
+.button_white i {
+    color: var(--first-color);
+}
+
+.button_white:hover,
+.button_white i:hover{
+    background-color: var(--container-color);
+    color: var(--first-color-alt);
+}
+
 /* About Styling */
 img.about_img{
     width: 200px;
@@ -798,4 +814,25 @@ div.swiper-button-next::after{
 .swiper-button-prev,
 .swiper-pagination-bullet {
     outline: none;
+}
+
+/* Project styling */
+.project_bg {
+    background-color: var(--first-color);
+    text-align: center;
+    padding-top: 3rem;
+}
+
+.project_title {
+    font-size: var(--h2-font-size);
+    margin-bottom: var(--mb-0-75);
+}
+
+.project_description {
+    margin-bottom: var(--mb-1-5);
+}
+
+.project_title,
+.project_description {
+    color: var(--container-color);
 }
