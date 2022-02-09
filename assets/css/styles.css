@@ -829,10 +829,50 @@ div.swiper-button-next::after{
 }
 
 .project_description {
-    margin-bottom: var(--mb-1-5);
+    margin-bottom: var(--mb-2-5);
 }
 
 .project_title,
 .project_description {
     color: var(--container-color);
 }
+
+/* Testimonial styling */
+.testimonial_content,
+.testimonial_header{
+    display: flex;
+}
+
+.testimonial_img {
+    width: 50px;
+    height: 60px;
+    border-radius: 50%;
+    margin-right: var(--mb-1);
+}
+
+.testimonial_content {
+    flex-direction: column;
+    padding: 0 2rem;
+    padding-bottom: var(--mb-2-5);
+}
+
+.testimonial_header {
+    margin-bottom: var(--mb-0-5);
+}
+
+.testimonial_name {
+    font-size: var(--h3-font-size);
+    font-weight: var(--font-medium);
+}
+
+.testimonial_title,
+.testimonial_company{
+    font-size: var(--smaller-font-size);
+    color: var(--text-color-light);
+}
+
+.testimonial_text {
+    font-size: var(--small-font-size);
+    text-align: justify;
+}
+
