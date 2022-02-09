@@ -83,6 +83,7 @@ let swiperPortfolio = new Swiper('.portfolio_container', {
     pagination: {
       el: ".swiper-pagination",
       clickable: true,
+      dynamicBullets: true,
     },
   });
 
@@ -90,14 +91,17 @@ let swiperPortfolio = new Swiper('.portfolio_container', {
 
 // Testimonial Swiper
 let swiperTestimonial = new Swiper(".testimonial_container", {
-    cssMode: true,
     loop: true,
-    navigation: {
-      nextEl: "div.swiper-button-next",
-      prevEl: "div.swiper-button-prev",
-    },
+    grabCursor: true,
+   
     pagination: {
       el: ".swiper-pagination",
       clickable: true,
+      dynamicBullets: true,
     },
+    breakoints: {
+        568: {
+            slidesPerView: 2,
+        }
+    }
   });
